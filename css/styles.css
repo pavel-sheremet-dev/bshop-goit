@@ -1,0 +1,275 @@
+
+
+
+:root {
+  --main-titles-btn-link-color: #303030;
+  --alternate-title-nav-btn-color: #ffffff;
+  --alternate-suptitle-color: rgba(157, 164, 189, 0.6);
+  --main-description-color: #555555;
+  --alternate-description-color: #9da4bd;
+  --accent-color: #ff6c00;
+
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-description-color);
+  background-color: rgb(220, 220, 220);
+  /* line-height: ;
+  letter-spacing: ; */
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+/* =============== COMPONENTS =============== */
+
+/* BUTTON ========================= */
+
+.modal-btn {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--main-titles-btn-link-color);
+
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+}
+
+/*  ===================== END BUTTON */
+
+/* SOCIAL LINKS ========================= */
+
+.social-links-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--main-titles-btn-link-color);
+}
+
+/*  ===================== END SOCIAL LINKS */
+
+/* SUPTITLE ========================= */
+
+.sup-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/*  ===================== END SUPTITLE */
+
+/* TITLES =========================== */
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+}
+
+/*  ===================== END TITLES */
+
+/* DESCRIPTIONS ========================= */
+
+.section-description {
+  /* font-weight: 400; */
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/*  ===================== END DESCRIPTIONS */
+
+
+/* =============== END COMPONENTS =============== */
+
+/* HEADER =========================== */
+
+.menu-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--alternate-title-nav-btn-color);
+}
+
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--alternate-title-nav-btn-color);
+}
+
+/*  ========================== END HEADER */
+
+/* HERO =========================== */
+
+.hero-title {
+  font-family: var(--secondary-font);
+  /* font-weight: 700; */
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--alternate-title-nav-btn-color);
+}
+
+.back-list-link,
+.next-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+}
+
+.next-list-item {
+  text-align: right;
+}
+
+/*  ========================== END HERO */
+
+/*  ABOUT SECTION ==========================  */
+
+.about-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: var(--main-description-color);
+}
+
+/*  ========================== END ABOUT SECTION */
+
+/*  ADVANTAGE SECTION ==========================  */
+
+.advantages-description {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--main-titles-btn-link-color);
+}
+
+.advantages-value {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--main-titles-btn-link-color);
+}
+/*  ========================== END ADVANTAGE SECTION  */
+
+/*  MASTERS SECTION ==========================  */
+
+.master-name {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.master-class {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/*  ========================== END MASTERS SECTION  */
+
+/*  CONTACTS ==========================  */
+
+.address {
+  font-style: normal;
+}
+
+/*  ========================== END CONTACTS  */
+
+/*  FOOTER ==========================  */
+
+.copyright-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+/*  ========================== END FOOTER  */
+
+/* =============== COLORS =============== */
+
+.hero .section-description,
+.pricelist .section-description,
+.contacts .section-description,
+.contact-list-link,
+.copyright-text {
+  color: var(--alternate-description-color);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.social-links-list-link:hover,
+.social-links-list-link:focus {
+  color: var(--accent-color);
+}
+
+.header .modal-btn,
+.next-back-list .next-list-link,
+.pricelist .title,
+.pricelist .modal-btn,
+.online-form .title,
+.contacts .title,
+.contacts .sup-title {
+  color: var(--alternate-title-nav-btn-color);
+}
+
+.hero .sup-title,
+.next-back-list .back-list-link,
+.pricelist .sup-title {
+  color: var(--alternate-suptitle-color);
+}
+
+.about .title,
+.about .sup-title,
+.about .modal-btn,
+.advantages .sup-title,
+.advantages .title,
+.masters .sup-title,
+.masters .title,
+.master-name,
+.gallery .sup-title,
+.gallery .title,
+  color: var(--main-titles-btn-link-color);
+}
+
+/* =============== END COLORS =============== */
