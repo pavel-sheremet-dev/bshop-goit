@@ -29,13 +29,39 @@ body {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, img, button, ul, li, small {
+  background-color: grey;
+  outline: 1px solid yellow;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, small {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img, a {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+
 
 /* =============== COMPONENTS =============== */
 
 /* BUTTON ========================= */
 
 .modal-btn {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -44,6 +70,14 @@ body {
   background-color: transparent;
   cursor: pointer;
   color: var(--main-titles-btn-link-color);
+
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
 
 }
 
@@ -101,10 +135,52 @@ body {
 
 /*  ===================== END DESCRIPTIONS */
 
+/* SECTION ========================= */
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+/*  ===================== END SECTION */
+
 
 /* =============== END COMPONENTS =============== */
 
 /* HEADER =========================== */
+
+.head-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.tel-link {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .menu-link {
   font-weight: 600;
@@ -186,6 +262,18 @@ body {
 
 /*  MASTERS SECTION ==========================  */
 
+.masters {
+  background-color: #F7F7F7;
+}
+
+.sup-title {
+  margin-bottom: 20px;
+}
+
+.masters .title {
+  margin-bottom: 44px;
+}
+
 .master-name {
   font-family: var(--main-font);
   font-weight: 400;
@@ -193,7 +281,26 @@ body {
   line-height: 1.39;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
+
+.master-card {
+  padding-top: 30px;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.masters-list-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 
 .master-class {
   font-family: var(--main-font);
@@ -203,6 +310,23 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.social-link-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link-list-link {
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.social-link-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*  ========================== END MASTERS SECTION  */
